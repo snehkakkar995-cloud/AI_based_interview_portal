@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* -------------------------
+   Global Styles
+-------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased overflow-x-hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Selection */
+
+::selection {
+  @apply bg-blue-600 text-white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
